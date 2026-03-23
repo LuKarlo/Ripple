@@ -1,0 +1,501 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow: hidden;
+  background: var(--bg-primary);
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  border-radius: 42px;
+  background: var(--bg-primary);
+  padding: 12px;
+  overflow: hidden;
+}
+
+.app .wrapper-content {
+  width: 100%;
+  height: 100%;
+  border-radius: 42px;
+  border: 15px solid var(--bg-foreground);
+  padding: 1.5rem;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.wrapper-content .time-wrapper {
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-hidden);
+  flex-direction: column;
+  position: relative;
+}
+
+.header-wrapper {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-wrapper .text-wrapper {
+  flex: 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-wrapper h4 {
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.header-wrapper .button-wrapper {
+  flex: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cta {
+  height: 50%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  border: 2px solid var(--text-hidden-t);
+  color: var(--accent);
+  background: transparent;
+  font-size: 1.2rem;
+}
+
+.cta:active {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  background: var(--accent-bg);
+}
+
+.alert-banner {
+  width: 100%;
+  height: auto;
+  background: var(--accent-bg);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--accent);
+  color: var(--accent-text);
+  display: flex;
+}
+
+.alert-banner .icon {
+  color: var(--accent);
+  font-size: 1.2rem !important;
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time {
+  background: var(--accent-bg) !important;
+  border-color: var(--accent) !important;
+  color: var(--accent-text);
+}
+
+.time .icon {
+  color: var(--accent);
+}
+
+.mock {
+  background: var(--accent-bg-mock) !important;
+  border-color: var(--accent-mock) !important;
+  color: var(--accent-text-mock);
+}
+
+.mock .icon {
+  color: var(--accent-mock);
+}
+
+.events-wrapper {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.events-wrapper .event {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-secondary);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--text-hidden-t);
+  color: var(--text-hidden);
+  display: flex;
+}
+
+.event .title {
+  color: var(--text);
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.create-event-cta {
+  background: transparent !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: dashed !important;
+}
+
+.create-event-cta span svg {
+  transform: translateY(0.2rem);
+}
+
+.creation-form-wrapper {
+  transition: all 0.3s;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  position: absolute;
+  z-index: 5;
+  width: calc(100% - 50px);
+  bottom: 3.2rem;
+  right: 50%;
+  transform: translateX(50%);
+  height: 100%;
+}
+
+.event-create-form {
+  background: var(--bg-primary);
+  width: 100%;
+  height: 83%;
+  border: 2px solid var(--bg-foreground);
+  border-bottom: none;
+  border-radius: 50vw 50vw 0 0 / 2rem 2rem 0 0;
+  z-index: 6;
+  padding: 1rem;
+  padding-top: 3rem;
+}
+
+.event-create-form .header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  gap: 2.5rem;
+  margin-bottom: -1rem;
+}
+
+.event-create-form .field {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.event-create-form .field .label {
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+.event-create-form .field input,
+textarea {
+  width: 100%;
+  height: 3rem;
+  background: var(--bg-secondary);
+  border: 2px solid var(--accent);
+  outline-color: var(--accent-text);
+  color: var(--text);
+  padding: 0 1rem;
+  border-radius: 1rem;
+}
+
+.field.sec textarea {
+  background: var(--bg-secondary);
+  border: 2px solid var(--text-hidden);
+  color: var(--text);
+}
+
+.field.sec .label {
+  color: var(--text-hidden);
+}
+
+.field textarea {
+  min-height: 10rem;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1rem;
+  resize: vertical;
+}
+
+.field input[type="submit"] {
+  background: var(--accent);
+  color: var(--bg-primary);
+  font-size: large;
+  font-weight: bold;
+}
+
+/* Modifica la card dell'evento */
+.events-wrapper .event {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 1rem;
+  background: var(--bg-secondary);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--text-hidden-t);
+}
+
+.delete-event {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 1rem;
+  border-right: 1px solid var(--text-hidden-t);
+  color: #ff4d4d;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.event-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.event .title {
+  color: var(--text);
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+.event .notes {
+  color: var(--text-hidden);
+  font-size: 0.9rem;
+}
+
+.setting-sidebar {
+  z-index: 1000;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: var(--bg-primary);
+  top: 0;
+  right: 0;
+  transition: all 0.3s;
+  padding: 2rem;
+  padding-top: 6rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.setting-sidebar .header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.setting-sidebar .setting {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.setting h1 {
+  text-transform: uppercase;
+  color: var(--accent);
+  font-size: 1rem;
+}
+
+.setting .card-setting {
+  width: 100%;
+  height: auto;
+  background: var(--bg-foreground);
+  border-radius: 1rem;
+  border: 1px solid var(--text-hidden);
+  display: flex;
+  color: var(--text);
+  gap: 1rem;
+  padding: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-setting svg {
+  font-size: 2rem;
+}
+
+.card-setting .range {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.range .number-range {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.number-range input {
+  background: transparent;
+  border: none;
+  width: 2.5rem;
+  aspect-ratio: 3/4;
+  font-size: 2rem;
+  outline: none;
+  color: var(--text);
+}
+
+.range .title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--text-hidden);
+}
+
+.close {
+  height: 0 !important;
+}
+
+.setting-sidebar.close {
+  transform: translateX(100%);
+  height: 100vh !important;
+}
+
+.close form {
+  border: none;
+}
+
+form * {
+  transition: all 0.3s;
+}
+
+.close * {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+/* ─── Theme selector ─────────────────────────────────────────────── */
+
+.theme-selector {
+  flex-direction: column !important;
+  align-items: stretch !important;
+  justify-content: flex-start !important;
+  padding: 0.5rem !important;
+  gap: 0.25rem !important;
+}
+
+.theme-option {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  border: 2px solid transparent;
+}
+
+.theme-option:hover {
+  background: var(--accent-bg);
+}
+
+.theme-option.active {
+  border-color: var(--accent);
+  background: var(--accent-bg);
+}
+
+.theme-option span {
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.theme-option.active span {
+  color: var(--accent-text);
+  font-weight: bold;
+}
+
+/* Pallino di anteprima colore per ogni tema */
+.theme-preview {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 2px solid var(--text-hidden-t);
+}
+
+.theme-preview.theme-claude {
+  background: hsl(15 68% 52%);
+}
+.theme-preview.theme-light {
+  background: hsl(15 68% 48%);
+}
+.theme-preview.theme-dark {
+  background: hsl(255 65% 62%);
+}
+.theme-preview.theme-monochrome {
+  background: hsl(0 0% 30%);
+}
+.theme-preview.theme-mint {
+  background: hsl(158 55% 38%);
+}
+.theme-preview.theme-ocean {
+  background: hsl(200 80% 50%);
+}
+
+/* ─── Input testo impostazioni ───────────────────────────────────── */
+
+.card-setting.custom-message input[type="text"] {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--text-hidden-t);
+  outline: none;
+  color: var(--text);
+  font-size: 1rem;
+  padding: 0.4rem 0.2rem;
+  transition: border-color 0.2s;
+}
+
+.card-setting.custom-message input[type="text"]:focus {
+  border-bottom-color: var(--accent);
+}
+
+.card-setting.custom-message input[type="text"]::placeholder {
+  color: var(--text-hidden);
+  font-style: italic;
+}

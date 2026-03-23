@@ -1,0 +1,107 @@
+.theme-claude{
+    --bg-primary: hsl(30 22% 9%);
+    --bg-foreground: hsl(27, 18%, 19%);
+    --bg-secondary: hsl(40 20% 12%);
+
+    --text: hsl(35 51% 92%);
+    --text-hidden-t: hsla(35, 3%, 52%, .5);
+    --text-hidden: hsla(35, 3%, 52%);
+
+    --accent: hsl(15 68% 52%);
+    --accent-text: hsl(15 68% 75%);
+    --accent-bg: hsla(15, 68%, 52%, .1);
+
+    --accent-mock: hsl(90 68% 52%);
+    --accent-text-mock: hsl(90 68% 95%);
+    --accent-bg-mock: hsla(90, 68%, 52%, .1);
+}
+
+.theme-light{
+    --bg-primary: hsl(35 30% 96%);
+    --bg-foreground: hsl(35 25% 90%);
+    --bg-secondary: hsl(35 20% 93%);
+
+    --text: hsl(30 20% 15%);
+    --text-hidden-t: hsla(30, 10%, 40%, .5);
+    --text-hidden: hsla(30, 10%, 40%);
+
+    --accent: hsl(15 68% 48%);
+    --accent-text: hsl(15 68% 35%);
+    --accent-bg: hsla(15, 68%, 48%, .1);
+
+    --accent-mock: hsl(90 68% 52%);
+    --accent-text-mock: hsl(90 55% 22%);
+    --accent-bg-mock: hsla(90, 68%, 52%, .1);
+}
+
+.theme-dark{
+    --bg-primary: hsl(220 15% 8%);
+    --bg-foreground: hsl(220 13% 16%);
+    --bg-secondary: hsl(220 14% 11%);
+
+    --text: hsl(220 20% 92%);
+    --text-hidden-t: hsla(220, 5%, 55%, .5);
+    --text-hidden: hsla(220, 5%, 55%);
+
+    --accent: hsl(255 65% 62%);
+    --accent-text: hsl(255 65% 78%);
+    --accent-bg: hsla(255, 65%, 62%, .1);
+
+    --accent-mock: hsl(90 68% 52%);
+    --accent-text-mock: hsl(90 68% 95%);
+    --accent-bg-mock: hsla(90, 68%, 52%, .1);
+}
+
+.theme-monochrome{
+    --bg-primary: hsl(0 0% 98%);
+    --bg-foreground: hsl(0 0% 91%);
+    --bg-secondary: hsl(0 0% 94%);
+
+    --text: hsl(0 0% 10%);
+    --text-hidden-t: hsla(0, 0%, 45%, .5);
+    --text-hidden: hsla(0, 0%, 45%);
+
+    --accent: hsl(0 0% 15%);
+    --accent-text: hsl(0 0% 30%);
+    --accent-bg: hsla(0, 0%, 15%, .08);
+
+    --accent-mock: hsl(90 68% 52%);
+    --accent-text-mock: hsl(90 55% 22%);
+    --accent-bg-mock: hsla(90, 68%, 52%, .1);
+}
+
+.theme-mint{
+    --bg-primary: hsl(150 20% 97%);
+    --bg-foreground: hsl(150 18% 89%);
+    --bg-secondary: hsl(150 15% 93%);
+
+    --text: hsl(155 25% 12%);
+    --text-hidden-t: hsla(155, 10%, 40%, .5);
+    --text-hidden: hsla(155, 10%, 40%);
+
+    --accent: hsl(158 55% 38%);
+    --accent-text: hsl(158 55% 28%);
+    --accent-bg: hsla(158, 55%, 38%, .1);
+
+    --accent-mock: hsl(90 68% 52%);
+    --accent-text-mock: hsl(90 55% 22%);
+    --accent-bg-mock: hsla(90, 68%, 52%, .1);
+}
+
+.theme-ocean{
+    --bg-primary: hsl(210 35% 7%);
+    --bg-foreground: hsl(210 30% 15%);
+    --bg-secondary: hsl(210 32% 10%);
+
+    --text: hsl(200 40% 92%);
+    --text-hidden-t: hsla(200, 10%, 55%, .5);
+    --text-hidden: hsla(200, 10%, 55%);
+
+    --accent: hsl(200 80% 50%);
+    --accent-text: hsl(200 80% 72%);
+    --accent-bg: hsla(200, 80%, 50%, .1);
+
+    --accent-mock: hsl(90 68% 52%);
+    --accent-text-mock: hsl(90 68% 95%);
+    --accent-bg-mock: hsla(90, 68%, 52%, .1);
+}

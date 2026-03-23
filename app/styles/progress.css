@@ -1,0 +1,103 @@
+/* ─── Progress bar ───────────────────────────────────────────────── */
+
+.progress-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.progress-bar-track {
+    width: 100%;
+    height: 1.75rem;
+    background: var(--bg-secondary);
+    border-radius: 2rem;
+    border: 1px solid var(--text-hidden-t);
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 2rem;
+    transition: width 0.5s ease;
+    opacity: 0.85;
+}
+
+.progress-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--text);
+    pointer-events: none;
+}
+
+.progress-label svg {
+    color: var(--accent);
+    font-size: 0.85rem;
+}
+
+/* ─── Banner riscatto ────────────────────────────────────────────── */
+
+.redeem-banner {
+    width: 100%;
+    background: var(--accent-bg);
+    border: 2px solid var(--accent);
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.redeem-text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--accent-text);
+    font-size: 0.9rem;
+}
+
+.redeem-text svg {
+    font-size: 1.1rem;
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+.redeem-btn {
+    background: var(--accent);
+    color: var(--bg-primary);
+    border: none;
+    border-radius: 2rem;
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.redeem-btn:active {
+    opacity: 0.7;
+}
+
+.progress-label svg {
+    color: var(--accent);
+    font-size: 0.85rem;
+    filter: drop-shadow(0 0 3px var(--bg-primary)) drop-shadow(0 0 3px var(--bg-primary));
+}
